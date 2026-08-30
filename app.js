@@ -1,6 +1,6 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
 const SUPABASE_URL='https://pmwagzylqgxzigtizaqb.supabase.co';
-const SUPABASE_KEY='REPLACE_WITH_ELF_PUBLISHABLE_KEY';
+const SUPABASE_KEY='sb_publishable_27JdPAJXuxnfgBpHQCFDzA__6-uJcMh';
 const supabase=createClient(SUPABASE_URL,SUPABASE_KEY);
 const $=id=>document.getElementById(id);let user=null;
 async function init(){const {data}=await supabase.auth.getSession();user=data.session?.user||null;render();if(user)loadPosts();}
